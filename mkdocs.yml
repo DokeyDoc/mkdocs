@@ -36,6 +36,7 @@ theme:
 nav:
   - Accueil: /
   - Github:
+    - Gestion de compte:
   - Docker:
   - Ansible:
   - Git:
