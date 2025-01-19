@@ -1,0 +1,41 @@
+---
+    name: Upload github pages
+    
+    on:
+      workflow_dispatch:
+      push:
+        branches:
+          - main
+    
+    jobs:
+      build:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Get data from repository
+            uses: actions/checkout@v4
+    
+          - run: docker build --target build -t mkdocs-builder .
+    
+          - run: docker container run --rm -v ./site:/app/site mkdocs-builder
+    
+          - name: Upload static files as artifact
+            id: deployment
+            uses: actions/upload-pages-artifact@v3 
+            with:
+              path: site/
+
+      deploy:
+        needs: build
+        permissions:
+          pages: write      
+          id-token: write   
+
+        environment:
+          name: github-pages
+          url: ${{ steps.deployment.outputs.page_url }}
+    
+        runs-on: ubuntu-latest
+        steps:
+          - name: Deploy to GitHub Pages
+            id: deployment
+            uses: actions/deploy-pages@v4 
