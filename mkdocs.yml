@@ -32,13 +32,14 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - toc.integrate
+    - content.code.copy
 
 nav:
   - Accueil: index.md  # Assurez-vous que ce fichier existe !
   - Github:
-      - Gestion de compte: github/account.md  # Vérifiez que ce fichier existe !
+      - Gestion de compte: github/account.md  
   - Docker:
-      - Les bases: docker/docker-basics.md  # Vérifiez que ce fichier existe !
+      - Les bases: docker/docker-basics.md  
 
 markdown_extensions:
   # - mdx_truly_sane_lists # pour l'indentation des listes imbriquées
@@ -51,6 +52,14 @@ markdown_extensions:
   # - pymdownx.saneheaders
   - pymdownx.smartsymbols
   # - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  
   - toc:
       permalink: true
   - pymdownx.emoji:
@@ -72,3 +81,4 @@ extra_css:
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
   - _assets/javascript/tables.js  # Assurez-vous que ce fichier existe !
+
