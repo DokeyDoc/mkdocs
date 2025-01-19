@@ -55,7 +55,7 @@ markdown_extensions:
   - toc:
       permalink: true
   - pymdownx.emoji:
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_generator: python/name:material.extensions.emoji.to_svg
   - pymdownx.tilde
   - pymdownx.tasklist:
       custom_checkbox: true
