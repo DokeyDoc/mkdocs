@@ -34,32 +34,32 @@ theme:
     - toc.integrate
 
 nav:
-  - Accueil: /
+  - Accueil: index.md  # Assurez-vous que ce fichier existe !
   - Github:
-    - Gestion de compte: github/account.md
+      - Gestion de compte: github/account.md  # Vérifiez que ce fichier existe !
   - Docker:
-    - Les bases: docker/docker-basics.md
+      - Les bases: docker/docker-basics.md  # Vérifiez que ce fichier existe !
 
-  
 markdown_extensions:
-  #- mdx_truly_sane_lists # for mkdocs to indent nested lists with 2 spaces VS 4 by default
-  #- pymdownx.tabbed
+  # - mdx_truly_sane_lists # pour l'indentation des listes imbriquées
+  # - pymdownx.tabbed
   - admonition
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.critic
   - pymdownx.magiclink
-  #- pymdownx.saneheaders
+  # - pymdownx.saneheaders
   - pymdownx.smartsymbols
-  #- footnotes
+  # - footnotes
   - toc:
       permalink: true
   - pymdownx.emoji:
-      emoji_generator: python/name:material.extensions.emoji.to_svg
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tilde
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true
+
 plugins:
   - tags
   - search:
@@ -68,7 +68,7 @@ plugins:
       enable_creation_date: true
 
 extra_css:
-  - _assets/stylesheets/extra.css
+  - _assets/stylesheets/extra.css  # Assurez-vous que ce fichier existe !
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
-  - _assets/javascript/tables.js
+  - _assets/javascript/tables.js  # Assurez-vous que ce fichier existe !
