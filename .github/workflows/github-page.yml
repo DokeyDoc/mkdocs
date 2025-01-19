@@ -1,4 +1,4 @@
-name: Upload GitHub Pages
+name: DokeyDoc
 
 on:
   workflow_dispatch:
