@@ -42,6 +42,8 @@ nav:
   - Docker:
       - Les bases Docker: docker/docker-basics.md  
       - Docker compose: docker/docker-compose.md
+  - Ansible:
+      - Les bases de Ansible: ansible/ansible-commands.md
 
 markdown_extensions:
   # - mdx_truly_sane_lists # pour l'indentation des listes imbriquées
