@@ -44,6 +44,8 @@ nav:
       - Docker compose: docker/docker-compose.md
   - Ansible:
       - Les bases de Ansible: ansible/ansible-commands.md
+  - Firewall:
+      - Les bases de Iptables: firewall/firewall-commands.md
 
 markdown_extensions:
   # - mdx_truly_sane_lists # pour l'indentation des listes imbriquées
