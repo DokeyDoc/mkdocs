@@ -37,7 +37,7 @@ theme:
 nav:
   - Accueil: index.md  # Assurez-vous que ce fichier existe !
   - Github:
-      - Les bases de Github: github-commands.md
+      - Les bases de Github: github/github-commands.md
       - Gestion de compte: github/account.md  
   - Docker:
       - Les bases Docker: docker/docker-basics.md  
