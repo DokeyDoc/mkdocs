@@ -9,7 +9,7 @@ Avant de commencer, vous devez installer Docker sur votre machine. Vous pouvez t
 
 ## 2. Commandes de Base
 
-### 2.1 Vérifier l'Installation de Docker
+2.1 Vérifier l'Installation de Docker
 Pour vérifier si Docker est installé correctement, utilisez la commande suivante :
 ```bash
 docker --version
@@ -20,7 +20,7 @@ Docker version 20.10.7, build f0df350
 ```
 Cela montre que Docker est installé et la version exacte de Docker.
 
-### 2.2 Lancer Docker
+2.2 Lancer Docker
 Pour démarrer Docker (si ce n'est pas déjà fait), utilisez :
 ```bash
 docker run hello-world
@@ -33,7 +33,7 @@ docker run hello-world
 
 ## 3. Commandes Docker pour Manipuler les Conteneurs
 
-### 3.1 Lancer un Conteneur
+3.1 Lancer un Conteneur
 Pour exécuter un conteneur à partir d'une image (par exemple, l'image `ubuntu`), utilisez :
 ```bash
 docker run -it ubuntu
@@ -42,7 +42,7 @@ docker run -it ubuntu
 - Docker télécharge l'image `ubuntu` si elle n'est pas déjà présente sur votre machine.
 - Un conteneur `ubuntu` est lancé et vous êtes directement dans le terminal du conteneur (mode interactif avec `-it`).
 
-### 3.2 Lister les Conteneurs en Cours d'Exécution
+3.2 Lister les Conteneurs en Cours d'Exécution
 Pour voir les conteneurs qui sont actuellement en fonctionnement :
 ```bash
 docker ps
@@ -67,7 +67,7 @@ e04b984b5789   ubuntu    "bash"    5 hours ago  Exited (0) 5 hours ago      rela
 ```
 Cette commande liste tous les conteneurs, qu'ils soient actifs ou arrêtés.
 
-### 3.4 Arrêter un Conteneur
+3.4 Arrêter un Conteneur
 Pour arrêter un conteneur en cours d'exécution, utilisez :
 ```bash
 docker stop <nom_du_conteneur>
@@ -79,7 +79,7 @@ docker stop hopeful_brown
 **Ce qui se passe :**
 - Le conteneur `hopeful_brown` est arrêté.
 
-### 3.5 Supprimer un Conteneur
+3.5 Supprimer un Conteneur
 Pour supprimer un conteneur, utilisez :
 ```bash
 docker rm <nom_du_conteneur>
@@ -95,7 +95,7 @@ docker rm hopeful_brown
 
 ## 4. Commandes Docker pour Manipuler les Images
 
-### 4.1 Lister les Images Docker
+4.1 Lister les Images Docker
 Pour voir toutes les images disponibles sur votre machine :
 ```bash
 docker images
@@ -108,7 +108,7 @@ nginx        latest    f0dbfc1ad8ab   3 weeks ago   133MB
 ```
 Cette commande montre toutes les images téléchargées sur votre machine.
 
-### 4.2 Télécharger une Image depuis Docker Hub
+4.2 Télécharger une Image depuis Docker Hub
 Pour télécharger une image depuis Docker Hub, utilisez :
 ```bash
 docker pull nginx
@@ -116,7 +116,7 @@ docker pull nginx
 **Ce qui se passe :**
 - Docker télécharge l'image `nginx` depuis Docker Hub.
 
-### 4.3 Construire une Image à partir d'un Dockerfile
+4.3 Construire une Image à partir d'un Dockerfile
 Si vous avez un fichier `Dockerfile`, vous pouvez créer une image en utilisant la commande suivante :
 ```bash
 docker build -t mon_image .
@@ -129,7 +129,7 @@ docker build -t mon_image .
 
 ## 5. Travailler avec les Volumes
 
-### 5.1 Créer un Volume
+5.1 Créer un Volume
 Un volume Docker permet de persister des données. Pour créer un volume :
 ```bash
 docker volume create mon_volume
@@ -137,7 +137,7 @@ docker volume create mon_volume
 **Ce qui se passe :**
 - Docker crée un volume nommé `mon_volume`.
 
-### 5.2 Lister les Volumes
+5.2 Lister les Volumes
 Pour voir les volumes existants :
 ```bash
 docker volume ls
@@ -149,7 +149,7 @@ local     mon_volume
 ```
 Cela liste les volumes existants.
 
-### 5.3 Supprimer un Volume
+5.3 Supprimer un Volume
 Pour supprimer un volume non utilisé :
 ```bash
 docker volume rm mon_volume
@@ -161,7 +161,7 @@ docker volume rm mon_volume
 
 ## 6. Travailler avec les Réseaux
 
-### 6.1 Créer un Réseau
+6.1 Créer un Réseau
 Pour créer un réseau Docker :
 ```bash
 docker network create mon_reseau
@@ -169,7 +169,7 @@ docker network create mon_reseau
 **Ce qui se passe :**
 - Docker crée un réseau nommé `mon_reseau`.
 
-### 6.2 Lister les Réseaux
+6.2 Lister les Réseaux
 Pour voir les réseaux disponibles :
 ```bash
 docker network ls
@@ -181,7 +181,7 @@ c4b8fa33cb3f   mon_reseau      bridge    local
 ```
 Cela liste les réseaux existants.
 
-### 6.3 Connecter un Conteneur à un Réseau
+6.3 Connecter un Conteneur à un Réseau
 Pour connecter un conteneur à un réseau :
 ```bash
 docker network connect mon_reseau mon_conteneur
@@ -189,7 +189,7 @@ docker network connect mon_reseau mon_conteneur
 **Ce qui se passe :**
 - Le conteneur `mon_conteneur` est maintenant connecté au réseau `mon_reseau`.
 
-### 6.4 Déconnecter un Conteneur d'un Réseau
+6.4 Déconnecter un Conteneur d'un Réseau
 Pour déconnecter un conteneur d'un réseau :
 ```bash
 docker network disconnect mon_reseau mon_conteneur
@@ -201,7 +201,7 @@ docker network disconnect mon_reseau mon_conteneur
 
 ## 7. Commandes de Gestion des Logs et des Processus
 
-### 7.1 Voir les Logs d'un Conteneur
+7.1 Voir les Logs d'un Conteneur
 Pour afficher les logs d'un conteneur :
 ```bash
 docker logs mon_conteneur
@@ -212,7 +212,7 @@ Hello World from the Nginx container!
 ```
 Cela affiche les logs générés par le conteneur `mon_conteneur`.
 
-### 7.2 Exécuter une Commande dans un Conteneur en Cours d'Exécution
+7.2 Exécuter une Commande dans un Conteneur en Cours d'Exécution
 Pour exécuter une commande dans un conteneur en cours d'exécution :
 ```bash
 docker exec -it mon_conteneur bash
@@ -224,7 +224,7 @@ docker exec -it mon_conteneur bash
 
 ## 8. Nettoyage des Ressources Docker
 
-### 8.1 Supprimer Toutes les Images Non Utilisées
+8.1 Supprimer Toutes les Images Non Utilisées
 Pour supprimer toutes les images non utilisées :
 ```bash
 docker image prune -a
@@ -232,7 +232,7 @@ docker image prune -a
 **Ce qui se passe :**
 - Docker supprime toutes les images non utilisées par un conteneur.
 
-### 8.2 Supprimer Tous les Conteneurs Arrêtés
+8.2 Supprimer Tous les Conteneurs Arrêtés
 Pour supprimer tous les conteneurs arrêtés :
 ```bash
 docker container prune
@@ -240,7 +240,7 @@ docker container prune
 **Ce qui se passe :**
 - Docker supprime tous les conteneurs qui ne sont pas en cours d'exécution.
 
-### 8.3 Supprimer Tous les Volumes Non Utilisés
+8.3 Supprimer Tous les Volumes Non Utilisés
 Pour supprimer tous les volumes non utilisés :
 ```bash
 docker volume prune
@@ -248,7 +248,7 @@ docker volume prune
 **Ce qui se passe :**
 - Docker supprime tous les volumes non utilisés par un conteneur.
 
-### 8.4 Supprimer Tous les Réseaux Non Utilisés
+8.4 Supprimer Tous les Réseaux Non Utilisés
 Pour supprimer tous les réseaux non utilisés :
 ```bash
 docker network prune
@@ -263,5 +263,5 @@ Vous avez maintenant les bases pour démarrer avec Docker ! N'hésitez pas à ex
 
 ---
 
-### Remarque
+## Remarque
 Les commandes dans ce guide sont destinées à une utilisation sur un terminal Unix/Linux. Si vous utilisez Windows, vous pouvez utiliser Docker via Docker Desktop et un terminal comme PowerShell ou WSL (Windows Subsystem for Linux).
