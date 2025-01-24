@@ -263,5 +263,4 @@ Vous avez maintenant les bases pour démarrer avec Docker ! N'hésitez pas à ex
 
 ---
 
-## Remarque
-Les commandes dans ce guide sont destinées à une utilisation sur un terminal Unix/Linux. Si vous utilisez Windows, vous pouvez utiliser Docker via Docker Desktop et un terminal comme PowerShell ou WSL (Windows Subsystem for Linux).
+
