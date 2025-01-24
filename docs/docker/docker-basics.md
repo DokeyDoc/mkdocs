@@ -54,7 +54,7 @@ d1e4c8c0cd9b   ubuntu    "bash"    3 hours ago  Up 3 hours               hopeful
 ```
 Cela montre que le conteneur avec l'ID `d1e4c8c0cd9b` est en cours d'exécution.
 
-### 3.3 Lister Tous les Conteneurs (y compris ceux arrêtés)
+3.3 Lister Tous les Conteneurs (y compris ceux arrêtés)
 Pour voir tous les conteneurs, même ceux qui ne sont pas en cours d'exécution :
 ```bash
 docker ps -a
