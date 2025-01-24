@@ -1,10 +1,10 @@
 
-# Guide des Commandes Docker pour Débutants
+# Guide des Commandes Docker
 
 ## Introduction
 Docker est une plateforme permettant de développer, expédier et exécuter des applications dans des conteneurs. Un conteneur est une unité standardisée qui regroupe une application et toutes ses dépendances.
 
-### 1. Installation de Docker
+## 1. Installation de Docker
 Avant de commencer, vous devez installer Docker sur votre machine. Vous pouvez télécharger Docker Desktop [ici](https://www.docker.com/products/docker-desktop).
 
 ## 2. Commandes de Base
