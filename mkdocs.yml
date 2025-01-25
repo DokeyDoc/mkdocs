@@ -44,7 +44,7 @@ nav:
       - Docker compose: docker/docker-compose.md
   - Ansible:
       - Les bases de Ansible: ansible/ansible-commands.md
-  - Firewall:
+  - Linux:
       - Les bases de Iptables: linux/firewall-commands.md
 
 markdown_extensions:
