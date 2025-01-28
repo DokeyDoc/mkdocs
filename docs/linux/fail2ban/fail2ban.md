@@ -4,10 +4,10 @@ Fail2ban permet de protéger un serveur contre les attaques par force brute en b
 
 ## Installation de Fail2ban
 
-Installez Fail2ban et les outils `iptables` :
+Installez Fail2ban :
 
 ```bash
-sudo apt install fail2ban iptables
+sudo apt install fail2ban 
 ```
 
 ## Configuration de Base
