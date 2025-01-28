@@ -46,6 +46,7 @@ nav:
       - Les bases de Ansible: ansible/ansible-commands.md
   - Linux:
       - Les bases de Iptables: linux/firewall/firewall-commands.md
+      - SSH: linux/ssh/ssh.md
 
 markdown_extensions:
   # - mdx_truly_sane_lists # pour l'indentation des listes imbriquées
